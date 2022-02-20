@@ -6,18 +6,39 @@
     <style>
         span{
             color: blue;
-            font-family:"Arial Rounded MT Bold";
-            font-size: 30px;
+            font-size: 120px;
+            text-align: center;
         }
         button{
             color: black;
-            background-color: yellow;
+            background-color: cornflowerblue;
+            width: 250px;
+            height: 55px;
+            font-size: 24px;
+            border-color: firebrick;
+        }
+        input  {
+            margin-top: 60px;
+            width: 350px;
+            height: 50px;
+            font-size: 24px;
+            text-align: center;
+            border-color: lawngreen;
+        }
+        body{
+            margin:150px 650px ;
+            background-color: #22737a;
+        }
+        h1{
+            font-size: 40px;
+            color: yellow;
         }
     </style>
 </head>
 <body>
-<input type="text" id="year" placeholder="Nhập vào năm sinh của bạn">
-<button onclick="change();">Check</button>
+<h1>Kiểm tra con Giáp theo Năm Sinh</h1>
+<input type="number" id="year" placeholder="Nhập vào năm sinh của bạn">
+<button onclick="change();">Kiểm tra</button>
 <br><br>
 <span id="result"></span>
 <script>
